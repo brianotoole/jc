@@ -75,29 +75,23 @@
 	font-weight: normal;
 	line-height: 1.3;
   margin-top: calc-em(30px);
-	margin-right: calc-em(5px);
+	margin-right: calc-em(10px);
 	margin-bottom: calc-em(5px);
 	padding: calc-em(15px) calc-em(35px);
 	transition: 0.25s all ease-out;
 
-	&:hover,
-	a &:hover,
-	&:focus,
-	a &:focus,
-	&:active,
-	a &:active,
-	&.active {
+	&:hover {
 		background-color: darken( $color-primary, 15% );
 		border-color: darken( $color-primary, 15% );
-    box-shadow: 0 0 30px white;
 		color: $color-white;
 		text-decoration: none;
 	}
+  &:focus {
+    text-decoration: none;
+  }
 }
-svg:not(:root) {
-  overflow: visible;
-}
-.svg {
+
+.feedhim {
   width: 1em;
   height: 1em;
   font-size: 80px;
@@ -106,10 +100,6 @@ svg:not(:root) {
   left: 48%;
   z-index: 1001;
   opacity: 0;
-  .bacon {
-    fill: currentColor;
-    color: #a52323;
-  }
 }
 
 @keyframes shake {
@@ -126,13 +116,13 @@ svg:not(:root) {
   }
 }
 .shake {
-  animation: shake 1.5s linear;
+  animation: shake 1.25s linear;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translate3d(0, 250px, 0);
+    transform: translate3d(0, 300px, 0);
   }
 
   to {
@@ -141,5 +131,5 @@ svg:not(:root) {
   }
 }
 .fadeInUp {
-  animation: fadeInUp 0.5s linear;
+  animation: fadeInUp 1s linear;
 }

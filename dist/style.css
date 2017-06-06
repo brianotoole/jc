@@ -308,24 +308,19 @@ tbody tr:nth-child(odd) th {
   font-weight: normal;
   line-height: 1.3;
   margin-top: 1.875em;
-  margin-right: 0.3125em;
+  margin-right: 0.625em;
   margin-bottom: 0.3125em;
   padding: 0.9375em 2.1875em;
   transition: 0.25s all ease-out; }
-  .btn:hover,
-  a .btn:hover, .btn:focus,
-  a .btn:focus, .btn:active,
-  a .btn:active, .btn.active {
+  .btn:hover {
     background-color: #96004c;
     border-color: #96004c;
-    box-shadow: 0 0 30px white;
     color: #ffffff;
     text-decoration: none; }
+  .btn:focus {
+    text-decoration: none; }
 
-svg:not(:root) {
-  overflow: visible; }
-
-.svg {
+.feedhim {
   width: 1em;
   height: 1em;
   font-size: 80px;
@@ -334,9 +329,6 @@ svg:not(:root) {
   left: 48%;
   z-index: 1001;
   opacity: 0; }
-  .svg .bacon {
-    fill: currentColor;
-    color: #a52323; }
 
 @-webkit-keyframes shake {
   from, to {
@@ -361,14 +353,14 @@ svg:not(:root) {
             transform: translate3d(3px, 0, 0); } }
 
 .shake {
-  -webkit-animation: shake 1.5s linear;
-          animation: shake 1.5s linear; }
+  -webkit-animation: shake 1.25s linear;
+          animation: shake 1.25s linear; }
 
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 250px, 0);
-            transform: translate3d(0, 250px, 0); }
+    -webkit-transform: translate3d(0, 300px, 0);
+            transform: translate3d(0, 300px, 0); }
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -377,13 +369,13 @@ svg:not(:root) {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 250px, 0);
-            transform: translate3d(0, 250px, 0); }
+    -webkit-transform: translate3d(0, 300px, 0);
+            transform: translate3d(0, 300px, 0); }
   to {
     opacity: 1;
     -webkit-transform: none;
             transform: none; } }
 
 .fadeInUp {
-  -webkit-animation: fadeInUp 0.5s linear;
-          animation: fadeInUp 0.5s linear; }
+  -webkit-animation: fadeInUp 1s linear;
+          animation: fadeInUp 1s linear; }
