@@ -13,13 +13,12 @@
 <section class="hero is-full-height text-center">
   <div class="hero-text text-white">
     <div class="container">
-      <img src="img/bob.png">
+      <img src="img/bob.png" class="bob">
       <p class="hero-tagline">Welcome to the Den!! Press the button below to explore the sounds of Daddy's Lair!!</p>
       <a href="#" class="btn">Play a Jon Quote</a>
     </div><!--/.container-->
   </div><!--/.hero-text-->
 </section><!--/.hero-->
-<div class="play"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
@@ -38,6 +37,10 @@ function playSound() {
 }
 $(".btn").click(function() {
     playSound();
+    $(".bob").addClass('shake');
+    setTimeout(function () {
+        $('.bob').removeClass('shake');
+    }, 1400);
 });
 </script>
 

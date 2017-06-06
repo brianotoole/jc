@@ -6,7 +6,7 @@
 // line height: 1.5em on small screens, 1.5625em on big screens
 
 $color-body: #0c0c0c;
-$color-primary: #1b2302; // slate green
+$color-primary: #e20073; // pink
 $color-header: #133471; // darker blue
 $color-accent:  #fff8e8; // peach gold
 
@@ -35,9 +35,9 @@ $color-code: #dd1144;
 
 
 // Font Stacks
-$font-primary: 'Didact Gothic', sans-serif; //body
-$font-secondary: 'Francois One', sans-serif; //headings
-$font-monospace: Menlo, Monaco, monospace;
+$font-primary: 'Lora', serif;
+//$font-secondary: 'Francois One', sans-serif; //headings
+//$font-monospace: Menlo, Monaco, monospace;
 
 // Breakpoints
 $bp-xsmall: 20em; //converted to pixels = #em x 16(default body font-size) or, 20x16=320px
