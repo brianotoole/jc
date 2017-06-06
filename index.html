@@ -31,7 +31,13 @@ function playSound() {
     "sounds/bear.mp3",
     "sounds/h.mp3"
   );
-  $('#play').html("<audio src=\""+sounds[Math.floor(Math.random()*(sounds.length))]+"\" autoplay=\"false\" preload=\"true\" type=\"audio/mpeg\"/></audio>");
+  var obj = document.createElement("audio");
+  var randomizeSounds = sounds[Math.floor(Math.random()*(sounds.length) + 1)]
+      obj.src = randomizeSounds;
+      obj.volume = 1;
+      obj.autoPlay = false;
+      obj.preLoad = true;
+  $('#play').html("<audio src=\""+obj.src+"\" autoplay=\"false\" preload=\"true\" type=\"audio/mpeg\"/></audio>");
 }
 var btn = $(".btn");
 btn.on('click', function() {
