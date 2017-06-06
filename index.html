@@ -19,12 +19,11 @@
     </div><!--/.container-->
   </div><!--/.hero-text-->
 </section><!--/.hero-->
-<div id="play"></div>
+<div class="play"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
 // play random sound on click
-
 function playSound() {
   var sounds = new Array(
     "sounds/daddyshome.mp3",
@@ -32,19 +31,14 @@ function playSound() {
     "sounds/h.mp3"
   );
   var obj = document.createElement("audio");
-  var randomizeSounds = sounds[Math.floor(Math.random()*(sounds.length) + 1)]
-      obj.src = randomizeSounds;
-      obj.volume = 1;
+      obj.src = sounds[Math.floor(Math.random()*(sounds.length))];
       obj.autoPlay = false;
       obj.preLoad = true;
-  $('#play').html("<audio src=\""+obj.src+"\" autoplay=\"false\" preload=\"true\" type=\"audio/mpeg\"/></audio>");
+      obj.play();
 }
-var btn = $(".btn");
-btn.on('click', function() {
-  playSound();
+$(".btn").click(function() {
+    playSound();
 });
-
-
 </script>
 
 </body>
