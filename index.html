@@ -21,28 +21,25 @@
 </section><!--/.hero-->
 <div id="play"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script>
-  // play random sound on click
-  $(document).ready(function() {
-    var sounds = new Array(
-      "sounds/daddyshome.mp3",
-      "sounds/bear.mp3",
-      "sounds/h.mp3"
-    );
-    var obj = document.createElement("audio");
-    var randSounds = sounds[Math.floor(Math.random()*(sounds.length))]
-        obj.src= randSounds;
-        obj.volume=0.10;
-        obj.autoPlay=false;
-        obj.preLoad=true;
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+// play random sound on click
 
-    $(".btn").click(function() {
-        obj.play();
-    });
+function playSound() {
+  var sounds = new Array(
+    "sounds/daddyshome.mp3",
+    "sounds/bear.mp3",
+    "sounds/h.mp3"
+  );
+  $('#play').html("<audio src=\""+sounds[Math.floor(Math.random()*(sounds.length))]+"\" autoplay=\"false\" preload=\"true\" type=\"audio/mpeg\"/></audio>");
+}
+var btn = $(".btn");
+btn.on('click', function() {
+  playSound();
+});
 
-  });
-  </script>
+
+</script>
 
 </body>
 </html>
