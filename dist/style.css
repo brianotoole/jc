@@ -51,7 +51,6 @@ body {
 
 html {
   font-size: 100%;
-  line-height: 1;
   -webkit-font-smoothing: antialiased; }
 
 body {
@@ -249,10 +248,7 @@ tbody tr:nth-child(odd) th {
   height: auto;
   margin: 0;
   padding: 0;
-  background: url(http://wallpapercave.com/wp/A7FzeeC.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
+  background: #386167; }
   .hero .hero-text {
     position: relative;
     padding: 10.3125em 0 6.875em;
@@ -265,8 +261,11 @@ tbody tr:nth-child(odd) th {
       @media (min-width: 53.125em) {
         .hero .hero-text.pad-sm {
           padding: 11.25em 0 2.5em; } }
-    .hero .hero-text img {
-      margin: 0 auto; }
+    .hero .hero-text .bob {
+      margin: 0 auto;
+      max-width: 400px;
+      box-shadow: 0px 0px 57px rgba(255, 255, 255, 0.28);
+      border: 11px solid #34595f; }
   .hero .hero-title {
     margin-bottom: 0; }
   .hero .hero-tagline {
@@ -314,31 +313,72 @@ tbody tr:nth-child(odd) th {
   a .btn:active, .btn.active {
     background-color: #96004c;
     border-color: #96004c;
+    box-shadow: 0 0 30px white;
     color: #ffffff;
     text-decoration: none; }
+
+svg:not(:root) {
+  overflow: visible; }
+
+.svg {
+  width: 1em;
+  height: 1em;
+  font-size: 80px;
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  z-index: 1001;
+  opacity: 0; }
+  .svg .bacon {
+    fill: currentColor;
+    color: #a52323; }
 
 @-webkit-keyframes shake {
   from, to {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
   10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-            transform: translate3d(-10px, 0, 0); }
+    -webkit-transform: translate3d(-3px, 0, 0);
+            transform: translate3d(-3px, 0, 0); }
   20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-            transform: translate3d(10px, 0, 0); } }
+    -webkit-transform: translate3d(3px, 0, 0);
+            transform: translate3d(3px, 0, 0); } }
 
 @keyframes shake {
   from, to {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
   10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-            transform: translate3d(-10px, 0, 0); }
+    -webkit-transform: translate3d(-3px, 0, 0);
+            transform: translate3d(-3px, 0, 0); }
   20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-            transform: translate3d(10px, 0, 0); } }
+    -webkit-transform: translate3d(3px, 0, 0);
+            transform: translate3d(3px, 0, 0); } }
 
 .shake {
   -webkit-animation: shake 1.5s linear;
           animation: shake 1.5s linear; }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 250px, 0);
+            transform: translate3d(0, 250px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 250px, 0);
+            transform: translate3d(0, 250px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+.fadeInUp {
+  -webkit-animation: fadeInUp 0.5s linear;
+          animation: fadeInUp 0.5s linear; }
