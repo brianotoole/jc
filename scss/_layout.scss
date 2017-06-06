@@ -79,7 +79,6 @@
 	margin-bottom: calc-em(5px);
 	padding: calc-em(15px) calc-em(35px);
 	transition: 0.25s all ease-out;
-
 	&:hover {
 		background-color: darken( $color-primary, 15% );
 		border-color: darken( $color-primary, 15% );
@@ -88,6 +87,11 @@
 	}
   &:focus {
     text-decoration: none;
+  }
+  @media (max-width: $bp-medium) {
+    display: block;
+    margin: calc-em(15px) auto;
+    max-width: 50%;
   }
 }
 
@@ -127,7 +131,7 @@
 
   to {
     opacity: 1;
-    transform: none;
+    transform: translate3d(0, -50%, 0);
   }
 }
 .fadeInUp {

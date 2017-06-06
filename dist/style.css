@@ -319,6 +319,11 @@ tbody tr:nth-child(odd) th {
     text-decoration: none; }
   .btn:focus {
     text-decoration: none; }
+  @media (max-width: 53.125em) {
+    .btn {
+      display: block;
+      margin: 0.9375em auto;
+      max-width: 50%; } }
 
 .feedhim {
   width: 1em;
@@ -363,8 +368,8 @@ tbody tr:nth-child(odd) th {
             transform: translate3d(0, 300px, 0); }
   to {
     opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0); } }
 
 @keyframes fadeInUp {
   from {
@@ -373,8 +378,8 @@ tbody tr:nth-child(odd) th {
             transform: translate3d(0, 300px, 0); }
   to {
     opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0); } }
 
 .fadeInUp {
   -webkit-animation: fadeInUp 1s linear;
