@@ -21,9 +21,13 @@
     }
     .bob {
       margin: 0 auto;
-      max-width: 400px;
+      width: auto;
+      max-width: 250px;
       box-shadow: 0px 0px 57px rgba(255, 255, 255, 0.28);
       border: 11px solid #34595f;
+      @media (min-width: $bp-medium) {
+        max-width: 375px;
+      }
     }
 
   }
@@ -32,6 +36,7 @@
   }
   .hero-tagline {
 	padding-top: calc-em(25px);
+  line-height: 1.3em;
 	@media (min-width: $bp-medium) {
 	  font-size: calc-em(20px);
     }

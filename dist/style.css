@@ -263,13 +263,18 @@ tbody tr:nth-child(odd) th {
           padding: 11.25em 0 2.5em; } }
     .hero .hero-text .bob {
       margin: 0 auto;
-      max-width: 400px;
+      width: auto;
+      max-width: 250px;
       box-shadow: 0px 0px 57px rgba(255, 255, 255, 0.28);
       border: 11px solid #34595f; }
+      @media (min-width: 53.125em) {
+        .hero .hero-text .bob {
+          max-width: 375px; } }
   .hero .hero-title {
     margin-bottom: 0; }
   .hero .hero-tagline {
-    padding-top: 1.5625em; }
+    padding-top: 1.5625em;
+    line-height: 1.3em; }
     @media (min-width: 53.125em) {
       .hero .hero-tagline {
         font-size: 1.25em; } }
