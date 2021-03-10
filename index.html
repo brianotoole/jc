@@ -17,8 +17,8 @@
     <div class="container">
       <img src="img/bear2.png" class="bob">
       <p class="hero-tagline">Welcome to the Den! Use the buttons below to explore Daddy's Lair!</p>
-      <a href="#" class="btn quote">Talk to me, Goose</a>
-      <a href="#" class="btn feed">Feed the Daddy</a>
+      <a href="#" class="btn quote">Let the Bear Speak</a>
+      <a href="#" class="btn feed">Get the Bear High</a>
     </div><!--/.container-->
   </div><!--/.hero-text-->
 </section><!--/.hero-->
@@ -48,9 +48,7 @@ function feedHim() {
   var foods = new Array(
     "img/wd.png",
     "img/pills.png",
-    "img/mushroom.png",
-    "img/cheese.png",
-    "img/burger.png"
+    "img/mushroom.png"
   );
   var foods = foods[Math.floor(Math.random()*(foods.length))];
   $('#feedhim').html('<img class="feedhim" src="' + foods + '">');
