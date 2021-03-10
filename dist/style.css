@@ -240,7 +240,7 @@ tbody tr:nth-child(odd) th {
   height: auto;
   margin: 0;
   padding: 0;
-  background: #386167; }
+  background: #826e55; }
   .hero .hero-text {
     position: relative;
     padding: 10.3125em 0 6.875em;
@@ -258,10 +258,10 @@ tbody tr:nth-child(odd) th {
       width: auto;
       max-width: 250px;
       box-shadow: 0px 0px 57px rgba(255, 255, 255, 0.28);
-      border: 11px solid #34595f; }
+      border: 5px solid #40372a; }
       @media (min-width: 53.125em) {
         .hero .hero-text .bob {
-          max-width: 375px; } }
+          max-width: 500px; } }
   .hero .hero-title {
     margin-bottom: 0; }
   .hero .hero-tagline {
@@ -291,8 +291,8 @@ tbody tr:nth-child(odd) th {
 
 .btn {
   position: relative;
-  background-color: #e20073;
-  border: 0.125em solid #e20073;
+  background-color: #41372a;
+  border: 0.125em solid #1d1813;
   border-radius: 0.1875em;
   color: #ffffff;
   display: inline-block;
