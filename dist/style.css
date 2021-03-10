@@ -306,7 +306,7 @@ tbody tr:nth-child(odd) th {
   transition: 0.25s all ease-out; }
   .btn:hover {
     background-color: #96004c;
-    border-color: #96004c;
+    border-color: #1d1813;
     color: #ffffff;
     text-decoration: none; }
   .btn:focus {
