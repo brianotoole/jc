@@ -45,9 +45,14 @@ function playSound() {
 }
 function feedHim() {
   var foods = new Array(
-    "img/wd.png",
-    "img/pills.png",
-    "img/mushroom.png"
+    "img/exit.png",
+    "img/mayo1.png",
+    "img/mayo2.png",
+    "img/chips.png",
+    "img/cheese.png",
+    "img/burger.png",
+    "img/bread.png",
+    "img/bacon.png"
   );
   var foods = foods[Math.floor(Math.random()*(foods.length))];
   $('#feedhim').html('<img class="feedhim" src="' + foods + '">');
