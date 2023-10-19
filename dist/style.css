@@ -240,7 +240,7 @@ tbody tr:nth-child(odd) th {
   height: auto;
   margin: 0;
   padding: 0;
-  background: #826e55; }
+  background: #006778; }
   .hero .hero-text {
     position: relative;
     padding: 10.3125em 0 6.875em;
@@ -291,8 +291,8 @@ tbody tr:nth-child(odd) th {
 
 .btn {
   position: relative;
-  background-color: #41372a;
-  border: 0.125em solid #1d1813;
+  background-color: #9F792C;
+  border: 0.125em solid #9F792C;
   border-radius: 0.1875em;
   color: #ffffff;
   display: inline-block;
@@ -305,8 +305,8 @@ tbody tr:nth-child(odd) th {
   padding: 0.9375em 2.1875em;
   transition: 0.25s all ease-out; }
   .btn:hover {
-    background-color: #96004c;
-    border-color: #1d1813;
+    background-color: #906b1f;
+    border-color: #906b1f;
     color: #ffffff;
     text-decoration: none; }
   .btn:focus {
