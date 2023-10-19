@@ -27,15 +27,14 @@
 // play random sound on click
 function playSound() {
   var sounds = new Array(
-    "sounds/daddyshome.mp3",
-    "sounds/bear.mp3",
+    "sounds/order.mp3",
+    "sounds/whistle.mp3",
     "sounds/h.mp3",
     "sounds/pandora.mp3",
     "sounds/insane.mp3",
-    "sounds/whistle.mp3",
     "sounds/letsgo.mp3",
-    "sounds/order.mp3",
-    "sounds/tam.mp3"
+    "sounds/tam.mp3",
+    "sounds/daddyshome.mp3",
   );
   var obj = document.createElement("audio");
       obj.src = sounds[Math.floor(Math.random()*(sounds.length))];
